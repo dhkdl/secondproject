@@ -18,6 +18,8 @@ services:
       - gis_2ban_network
     secrets:
       - DJANGO_SECRET_KEY
+      - MARIADB_USER
+      - MARIADB_PASSWORD
     volumes:
       - gis_2ban_media:/home/secondproject/media/
       - gis_2ban_static:/home/secondproject/staticfiles/
